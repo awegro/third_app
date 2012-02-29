@@ -1,4 +1,6 @@
 ThirdApp::Application.routes.draw do
+  get "users/new"
+
   get "static_pages/home"
 
   match '/help', to: 'static_pages#help'
@@ -8,6 +10,8 @@ ThirdApp::Application.routes.draw do
   match '/contact', to: 'static_pages#contact'
   
   match '/terms', to: 'static_pages#terms'
+  
+  match '/signup', to: 'users#new'
   
   root to: 'static_pages#home'
 
