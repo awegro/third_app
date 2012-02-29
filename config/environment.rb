@@ -6,4 +6,3 @@ ThirdApp::Application.initialize!
 
 # Precompile Blueprint CSS
   config.assets.precompile += [ "blueprint/*.css" ]
-end
