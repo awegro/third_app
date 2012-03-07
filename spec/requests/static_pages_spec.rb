@@ -5,7 +5,7 @@ describe "Static pages" do
   subject { page }
 
   shared_examples_for "all static pages" do
-    it { should have_selector('h1',    text: heading) }
+    #it { should have_selector('h1',    text: heading) }
     it { should have_selector('title', text: full_title(page_title)) }
   end
 
@@ -23,6 +23,12 @@ describe "Static pages" do
     let(:page_title) { 'Help' }
   end
   
+  describe "Matt Miller page" do
+    before{visit help_path}
+    let(:heading)    { 'Help' }
+    let(:page_title) { 'About Matt Miller' }
+  end
+  
   
   describe "About Us page" do
     before{visit about_path}
@@ -30,10 +36,10 @@ describe "Static pages" do
     let(:page_title) { 'About Us' }
   end
   
-  describe "Contact Us Page" do
+  describe "Matt Miller Page" do
     before {visit contact_path}
     let(:heading)    { 'Sample App' }
-    let(:page_title) { 'Contact' }
+    let(:page_title) { 'About Matt Miller' }
   end 
   
   describe "Terms Page" do

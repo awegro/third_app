@@ -3,13 +3,19 @@ ThirdApp::Application.routes.draw do
 
   get "static_pages/home"
 
-  match '/help', to: 'static_pages#help'
+  match '/support', to: 'static_pages#support'
   
   match '/about', to: 'static_pages#about'
   
-  match '/contact', to: 'static_pages#contact'
+  match '/mattmiller', to: 'static_pages#mattmiller'
   
   match '/terms', to: 'static_pages#terms'
+  
+  match '/elect', to: 'static_pages#elect'
+  
+  match '/questions', to: 'static_pages#questions'
+  
+  match '/discussion', to: 'static_pages#discussion'
   
   match '/signup', to: 'users#new'
   

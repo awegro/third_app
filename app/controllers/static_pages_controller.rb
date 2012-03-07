@@ -13,4 +13,17 @@ class StaticPagesController < ApplicationController
   
   def terms
   end
+  
+  def elect
+  end
+  
+  def mattmiller
+  end
+  
+  def questions
+  end
+  
+  def discussion
+  end
+  
 end
