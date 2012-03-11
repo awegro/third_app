@@ -4,6 +4,9 @@ ThirdApp::Application.configure do
   # Code is not reloaded between requests
   config.cache_classes = true
 
+  #http://stackoverflow.com/questions/7300532/blueprint-css-rails-3-1-help
+  config.assets.compile = true
+  
   # Full error reports are disabled and caching is turned on
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
