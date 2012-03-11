@@ -18,8 +18,6 @@ group :assets do
   gem 'therubyracer'
 end
 
-end
-
 gem 'jquery-rails', '2.0.0'
 
 group :test do
