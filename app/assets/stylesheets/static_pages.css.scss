@@ -22,6 +22,20 @@ html
 	margin: 115px auto 36px;
 }
 
+#page2
+{
+	z-index: 1;
+	width: 960px;
+	min-height: 438px;
+	border-style: none;
+	background-color: #FFFFFF;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;
+	padding-bottom: 0px;
+}
+
 #master-header
 {
 	width: 0.01px;
