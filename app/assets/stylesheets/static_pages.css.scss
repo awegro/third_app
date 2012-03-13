@@ -513,9 +513,18 @@ html
 {
 	z-index: 125;
 	width: 710px;
-	min-height: 353px;
+	padding-bottom: 16px;
 	position: relative;
 	margin-right: -710px;
+}
+
+#u391-28modified
+{
+	z-index: 125;
+	width: 960px;
+	padding-bottom: 16px;
+	position: center;
+	margin-right: -960px;
 }
 
 #u386
@@ -671,3 +680,9 @@ html
 	margin-right: -553px;
 }
 
+.box {
+clear: both;
+margin-top: 6px;
+padding-top: 6px;
+border-top: 1px solid #666;
+}
