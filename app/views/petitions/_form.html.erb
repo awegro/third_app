@@ -1,0 +1,30 @@
+
+
+<table summary="Petition form fields">
+  <tr>
+    <th><%= f.label(:first_name) %></th>
+    <td><%= f.text_field(:first_name) %></td>
+  </tr>
+  <tr>
+    <th><%= f.label(:last_name) %></th>
+    <td><%= f.text_field(:last_name) %></td>
+  </tr>
+  <tr>
+    <th><%= f.label(:email) %></th>
+    <td><%= f.text_field(:email) %></td>
+  </tr>
+  <tr>
+    <th><%= f.label(:state) %></th>
+    <td><%= f.text_field(:state) %></td>
+  </tr>
+   <tr>
+	<div class="messageblock">
+    <th><%= f.label(:message) %></th>
+    <td><%= f.text_area(:message, :style => "border-top-width: 1px;border-bottom-width: 1px;border-right-width: 1px;border-left-width: 1px;width: 210px; height: 119px;") %></td>
+  </tr>
+	</div>
+	<tr>
+    <th><%= f.label(:volunteer) %></th>
+    <td><%= f.check_box(:volunteer) %></td>
+  </tr>
+</table>

@@ -2,8 +2,6 @@ ThirdApp::Application.routes.draw do
   get "users/new"
 
   get "static_pages/home"
-
-  match '/support', to: 'static_pages#support'
   
   match '/about', to: 'static_pages#about'
   
@@ -19,7 +17,12 @@ ThirdApp::Application.routes.draw do
   
   match '/signup', to: 'users#new'
   
+  match '/support', to: 'petitions#new'
+
+  
   root to: 'static_pages#home'
+  
+  resources :petitions
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

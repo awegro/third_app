@@ -1,0 +1,16 @@
+<% provide(:title, 'Support')%>
+
+	   
+				<div class="text">
+				  <h2>Create Subject</h2>
+
+				  <%= form_for(:petition, :url => {:action => 'create'}) do |f| %>
+
+				    <%= render(:partial => "form", :locals => {:f => f}) %>
+					<div class='span-7 prepend-4'>
+				    <div class="button">
+				      <%= submit_tag("Submit") %>
+				    </div>
+					</div>
+				  <% end %>
+		

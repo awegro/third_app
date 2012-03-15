@@ -31,7 +31,7 @@ legend, #IE8#HACK { margin-top:0; margin-bottom:0; }
   field, this is purely for looks.
  */
 input[type=text], input[type=password], input[type=url], input[type=email],
-input.text, input.title,
+input.text, input.title, input[type=textarea],petition[message]
 textarea {
   background-color:#fff;
   border:1px solid #bbb;
